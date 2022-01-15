@@ -10,7 +10,7 @@ const JWT_SECRET =
   "sdjkfh8923yhjdksbfma@#*(&@*!^#&@bhjb2qiuhesdbhjdsfg839ujkdhfjk";
 
 mongoose.connect(
-  "mongodb+srv://musa:musa123@cluster0.laqok.mongodb.net/jwtproject?retryWrites=true&w=majority",
+  process.env.MONGO_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
